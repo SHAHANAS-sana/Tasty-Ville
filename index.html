@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Tasty Ville</title>
-    <style>
-        body {
-            background-image: url('public/hero-chicken.jpg');
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: white;
-            text-align: center;
-        }
-        .button {
-            padding: 10px 20px;
-            background-color: #ff6347;
-            border: none;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Tasty Ville - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Tasty Ville!</h1>
-    <button class="button">Get Started!</button>
+    <nav>
+        <div class="logo">Tasty Ville</div>
+        <ul class="navbar">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="hero" style="background-image: url('hero-background.jpg');">
+        <div class="hero-content">
+            <h1>Welcome to Tasty Ville</h1>
+            <p>Your favorite place for delicious recipes!</p>
+            <a href="#" class="cta-button">Get Started</a>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+    </header>
+    <section id="ratings">
+        <div class="rating-card">
+            <h2>Customer Ratings</h2>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Best recipes I've ever tried!" - Happy Customer</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Tasty Ville. All rights reserved.</p>
+    </footer>
 </body>
 </html>

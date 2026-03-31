@@ -8,14 +8,14 @@ export interface MenuItem {
 }
 
 export type MenuCategory =
-  | "all"
-  | "grill"
-  | "biryani"
-  | "north"
-  | "rice"
-  | "burger"
-  | "drinks"
-  | "desserts";
+  | 'all'
+  | 'grill'
+  | 'biryani'
+  | 'north'
+  | 'rice'
+  | 'burger'
+  | 'drinks'
+  | 'desserts';
 
 export interface Testimonial {
   id: number;

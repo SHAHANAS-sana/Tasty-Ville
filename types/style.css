@@ -1,75 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
 }
 
-.hero-section {
-  background-image: url('/public/hero-chicken.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.hero {
+    background-image: url('path/to/your/image.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 50px;
-  text-align: center;
-  border-radius: 10px;
-  color: white;
-  max-width: 600px;
+.hero h1 {
+    font-size: 3rem;
 }
 
-.hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+.button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.hero-overlay p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+.button:hover {
+    background-color: #ff4500;
 }
 
-.cta-button {
-  background-color: #ff6b35;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #e55100;
-}
-
-.about {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #f4f4f4;
+.rating-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
-  .hero-overlay h1 {
-    font-size: 2rem;
-  }
-
-  .hero-overlay p {
-    font-size: 1.1rem;
-  }
+    .navbar {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
